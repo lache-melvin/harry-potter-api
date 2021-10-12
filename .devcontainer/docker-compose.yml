@@ -1,0 +1,14 @@
+version: '3.7'
+
+services:
+  harry-potter-api:
+    image: harry-potter-dev-container
+    build:
+      context: .
+    working_dir: /harry-potter
+    volumes:
+       - ..:/harry-potter
+       # For doing commits from the container without needing to re-enter your details
+       - ~/.gitconfig:/home/node/.gitconfig 
+    command: sleep infinity
+    env_file: ../.env

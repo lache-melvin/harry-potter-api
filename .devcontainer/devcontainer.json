@@ -1,0 +1,15 @@
+{
+	"name": "HPCatalogue",
+	"dockerComposeFile": [
+		"./docker-compose.yml"
+	],
+	"service": "harry-potter-api",
+	"workspaceFolder": "/harry-potter",
+	"shutdownAction": "stopCompose",
+	"settings": {},
+	"extensions": [
+		"ms-dotnettools.csharp",
+		"josefpihrt-vscode.roslynator"
+	],
+	"remoteUser": "harry"
+}
